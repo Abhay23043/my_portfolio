@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay - portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background: #020024;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            color: rgb(255, 255, 255);
+            font-family: 'poppins', sans-serif;
+        }
+        nav{
+            z-index:1;
+            position: fixed;
+            top:0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background: #002afa;
+            background: radial-gradient(circle, rgba(0, 42, 250, 1) 0%, rgba(88, 80, 181, 1) 100%);
+        }
+        nav ul li{
+            list-style-type:none;
+            margin: 0 23px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .right ul li a:hover{
+          background: #833AB4;
+          background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            padding: 10px;
+            border-radius: 100px;
+            transition: 0.3s;
+            text-decoration: underline;
+        }
+        
+        #xyz{
+            display: flex;
+            justify-content: space-around;
+            margin: 120px 0px;
+            align-items: center;
+            font-size: 12px;
+        }
+        #left{
+            font-size: 25px;
+        }
+        #b1{
+
+            font-size: 50px;
+        }
+        #b2{
+            margin: 110px;
+        }
+        .purple{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+      
+        .resume-button .bttn .butn{
+            background: #190b48;
+            color: white;
+            border: 2px solid white;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .resume-button{
+        position: relative;
+        top: -276px;
+        left: 97px;     
+        width: 1200px;
+        }
+        .bttn{
+            padding: 0px 0px;
+        }
+        .bttn{
+            width: 1200px;
+        }
+
+       
+        #second
+        {
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0; 
+            text-align: center;
+        }
+        main hr{
+       
+            margin: 35PX 56px;
+            border: 0;
+            background-color: #2a2a6f;
+            height: 3px;
+        }
+        #text_gray{
+            color: gray;
+            font-size: 20px; 
+        }
+       .education{
+        background: #1436e0;
+        background: radial-gradient(circle, rgba(20, 54, 224, 1) 0%, rgba(129, 13, 224, 1) 100%);
+        margin: 30px auto;
+        width: 70vw;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1)
+       }
+       .skill_education{
+        text-align: center;
+       }
+       .first_line{
+        display: flex;
+        gap: 15px;
+       }
+       .cap{
+        background-color: #93a4c7;
+        border-radius: 5px;
+        padding: 3px;
+        height: 49px;
+       }
+       .specilization{
+        color: #26C6DA;
+        font-size: 18px;
+       }
+       .dates{
+            display: flex;
+       }
+       .dates .year
+       {
+        padding-left:8px;
+       }
+       .first_line .dates{
+            margin-left: auto;
+       }
+       .secondline{
+        margin-left: 72px;
+       }
+       .calender{
+        padding: 2px;
+       }
+       .loc{
+        display: flex;
+       }
+       .loc .place{
+        padding-left:5px;
+        }
+        .key_logo{
+            background: #9900ff;
+            background: linear-gradient(266deg, rgba(153, 0, 255, 1) 0%, rgba(204, 29, 253, 1) 79%, rgba(255, 149, 0, 1) 100%);
+            display: flex;
+            border-radius: 15px;
+            margin-left: 3px;
+            margin-right: auto;
+            width: fit-content;
+            padding: 8px;
+            margin-top: 25px;  
+        }
+        .key_text{
+            margin-top: auto;
+            padding-left: 5px;
+        }
+        .course_list ul li{
+            padding: 5px 0;
+            font-size: 18px;
+            list-style-type: none;
+            margin-left: 25px;
+            
+        }
+        .course_list ul li a{
+            text-decoration: none;
+            color: rgb(255, 253, 253);
+        }
+        .edu_skills{
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0; 
+            
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .boxes > div{
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.515)
+        }
+        .boxes .box1{
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            width: 230px;
+            height: 210px;
+            margin-top: 50px;
+            
+        }
+        .boxes .box2{
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            width: 230px;
+            height: 210px;
+            margin-top: 50px;
+            
+        }
+        .boxes .box3{
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            width: 230px;
+            height: 210px;
+            margin-top: 50px;
+            
+        }
+        .boxes .box1 h5{
+            text-align: center;
+            padding-top: 60px;
+            font-size: 20px;
+        }
+        .boxes .box2 h5{
+            text-align: center;
+            padding-top: 60px;
+            font-size: 20px;
+        }
+        .boxes .box3 h5{
+            text-align: center;
+            padding-top: 60px;
+            font-size: 20px;
+        }
+        .boxes .box1 h6{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+            color: rgb(206, 192, 192);
+        }
+        .boxes .box2 h6{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+            color: rgb(206, 192, 192);
+        }
+        .boxes .box3 h6{
+            text-align: center;
+            padding-top: 10px;
+            font-size: 20px;
+            color: rgb(206, 192, 192);
+        }
+        .boxes .box1:hover h6{
+            display: none;
+        }
+         .boxes .box2:hover h6{
+            display: none;
+        }
+         .boxes .box3:hover h6{
+            display: none;
+        }
+
+        .boxes>div:hover h5{
+        margin: -33px 2px 0px 14px;
+        }
+
+        .boxes>div:hover {
+                background: #833AB4;
+                background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+                transform: translateY(-10px) scale(1.05); /* thoda upar aur bada */
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* zyada shadow */
+                transition: all 0.3s ease;
+
+        }
+        .boxes > div p{
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.5;
+            padding: 12px;
+            color: rgb(243, 236, 236);
+            
+        }
+        .boxes > div p{
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+         .boxes > div:hover p{
+            opacity: 1;
+         }
+         .university-highlights{
+            width: 70vw;
+            height: 170px;
+            margin: 50px auto;
+            background-color: #222843;
+            border-radius: 15px;
+            border: 1px solid #B026FF;
+            box-shadow: 0 0 12px rgba(160, 32, 240, 0.6); /* chamkila glow */ 
+         }
+         .university-highlights h3{
+            margin:30px 0px 0px 43px;
+         }
+         .university-highlights .three-block {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            
+         }
+         .university-highlights .three-block p{
+            font-size: 25px;
+            
+         }
+        .university-highlights .three-block >div >div{
+            font-size: 12px;
+            text-align: center;
+            margin-top: 2px;
+            color: #8f8ea1;
+        }
+        #text-purple{
+            color: rgb(238, 54, 248);
+        }
+        #text-blue{
+            color: #002aff;
+        }
+        #text-green{
+            color: greenyellow;
+        }
+        .skills-section{
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .skills-section p{
+            color: gray;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            
+        }
+        button{
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            font-size: 15px;
+        }
+        button:hover{
+            cursor: pointer;
+            transform: scale(1.1); /* 20% bada ho jayega */
+        
+        }
+
+        .buttons #Tools button:focus{
+            background: #833AB4;
+            color: white;
+        }
+        .buttons #dev button:focus{
+            background: #00886a;
+            color: white;
+        }
+        .buttons #clo button:focus{
+            background: #ffb700;
+            color: white;
+        }
+        .buttons #soft button:focus{
+            background: #de0e0e;
+            color: white;
+        }
+        .buttons #des button:focus{
+            background: #01568a;
+            color: white;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 30px 50px;
+            text-align: center;
+        }
+        .grid-container > div{
+            background-color: #3F5EFB;
+            padding: 20px;
+            font-size: 20px;
+            height:200px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.515)
+        }
+        .grid-container > div:hover{
+            transform: translateY(-10px) scale(1.05); /* thoda upar aur bada */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            
+        }
+        .grid-container ul{
+            list-style-type: none;
+            margin: 15px;
+            
+            
+        }
+        .grid-container ul li{
+            font-size: 16px;
+           
+            
+        }
+        .grid-container >div:hover{
+            background: #833AB4;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        }
+        .projects .featured_project h2{
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0;
+            text-align: center;
+        }
+         
+        .first-project{
+            width: 90vw;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+          
+            z-index: 0;
+        
+
+           
+        }
+        .first-project .images{
+            display: flex;
+            justify-content: center;
+
+           
+        }
+        .images >div {
+            text-align: center;
+        }
+       
+       
+       
+        .first-project .images a img{
+          
+            width: 40%;
+            height: auto;
+            border-radius: 50px;
+            border: 2px solid purple;
+            
+
+            
+        }
+       .first-project >div a img:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            border: 2px solid purple;
+            box-shadow: 0 0 12px rgba(160, 32, 240, 0.9); /* chamkila glow */             
+       }
+
+        .images ul{
+            list-style-type: none;
+           
+            margin-top: 20px;
+        }
+        .images ul li{
+            padding: 8px 0;
+            font-size: 15px;
+            color: rgb(197, 194, 194);
+        }
+        .images ul li a{
+            text-decoration: none;
+            
+        }
+         .images ul li a:hover{
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+           
+
+         }
+        .first-project .images h3{
+            margin-top: 15px;
+            font-size: 25px;
+         }
+        .featured_project >div p{
+            text-align: center;
+            margin: 1px 200px;
+            color: gray;
+        }
+        .About-me{
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0; 
+            text-align: center;
+        }
+        .about-me p{
+            color: gray;
+            margin: 5px 150px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button.active {
+            background: #090979;
+            background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(121, 2, 223, 1) 90%);
+            color: rgb(255, 255, 255);
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        .content.active {
+            display: block;
+        }
+        .my-photo img{
+            width: 217px;
+            border-radius: 70px;
+            margin: 27px;
+        }
+        .my-photo img:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 12px rgba(38, 245, 6, 1.5); /* chamkila glow */ 
+            cursor: pointer;
+        }
+        .btns button img{
+            margin: 1px;
+            position: relative;
+            left: -4px;
+            top: 4px;
+            filter: invert(1);
+}
+.journey{
+    background: #B3B3FF;
+    background: linear-gradient(90deg, rgba(179, 179, 255, 1) 0%, rgba(214, 245, 214, 1) 50%, rgba(255, 194, 179, 1) 100%);
+    height: 160px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+.journey .headerr>div{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 30px;
+    top: 17px;
+}
+.journey .headerr h4{
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    color: #020024;
+}
+.journey .headerr img{
+    /* filter: invert(1);  */
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 157, 1) 84%);
+    padding: 8px;
+    border-radius: 15px;
+}
+.headerr p{
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+    top: 28px;
+    left: 35px;
+    margin-right: 265px;
+    color: rgb(76, 74, 74);
+}
+.journey:hover{
+    cursor: pointer;
+    transform: translateY(-3px)scale(1.0);
+}
+.values{
+    background: #d6a9f5;
+    background: linear-gradient(90deg, rgba(214, 169, 245, 1) 0%, rgba(162, 245, 230, 1) 52%, rgba(247, 206, 148, 1) 100%);
+    height: 200px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+.val_head .vall{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 30px;
+    top: 17px;
+}
+.vall h4{
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    color: #020024;
+}
+.vall img{
+    /* filter: invert(1);  */
+    background: #333cbd;
+    background: linear-gradient(39deg, rgba(51, 60, 189, 1) 33%, rgba(0, 162, 255, 1) 84%);
+    padding: 8px;
+    border-radius: 15px;
+}
+.a{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.d{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    position: relative;
+    left: 14px;
+    top: -18px;
+}
+.para img{
+    width: 25px;
+  
+    padding: 10px;
+    position: relative;
+    left: -120px;
+}
+.g img{
+    border: 1px solid purple;
+    border-radius: 10px;
+
+}
+.h img{
+    border: 1px solid rgb(28, 0, 165);
+    border-radius: 10px;
+    
+}
+.i img{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+.j img{
+    border: 1px solid rgb(192, 0, 0);
+    border-radius: 10px;
+    
+}
+
+
+.para h5{
+    position: relative;
+    top: -45px;
+}
+.para p{
+    font-size: 10px;
+    position: relative;
+    top: -44px;
+    left: 27px;
+
+}
+.i h5{
+    position: relative;
+    left: -2px;
+}
+.j h5{
+    position: relative;
+    left: 14px;  
+}
+.factt{
+    background: #92ff8c;
+    background: radial-gradient(circle, rgba(146, 255, 140, 1) 0%, rgba(255, 254, 189, 1) 63%);
+    height: 320px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.heade {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 30px;
+    top: 17px;
+}
+.heade h4{
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    color: #020024;
+}
+.heade img{
+    /* filter: invert(1);  */
+    background: #ff006f;
+    background: radial-gradient(circle, rgba(255, 0, 111, 1) 0%, rgba(0, 235, 235, 1) 78%);
+    padding: 8px;
+    border-radius: 15px;
+}
+.contt >div{
+    display: flex;
+    justify-content: space-between;
+    margin: 38px;
+    line-height: 0px;
+
+}
+.contt >div p{
+    color: purple;
+    font-size: 13px;
+}
+.contt >div h6{
+    font-size: 15px;
+}
+.philos{
+    background: #7b499c;
+    background: linear-gradient(90deg, rgba(123, 73, 156, 1) 0%, rgba(240, 179, 255, 1) 0%, rgba(255, 255, 230, 1) 85%);
+    height: 150px;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+}
+.hea{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 30px;
+    top: 17px;
+}
+.hea h4{
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    color: #020024;
+}
+.hea img{
+    /* filter: invert(1);  */
+    background: #FD1D1D;
+    background: linear-gradient(18deg, rgba(253, 29, 29, 1) 31%, rgba(252, 176, 69, 1) 84%);
+    padding: 8px;
+    border-radius: 15px;
+}
+.con p{
+    /* position: relative; */
+    top: 27px;
+    left: 34px;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(69, 67, 67);
+    margin: 32px;
+
+}
+.contact_me{
+            margin: auto;
+            max-width: 80vw;
+            padding: 20px 0; 
+            text-align: center;
+}
+.let-connect h2{
+    margin: 17px;
+    font-size: 35px;
+}
+.contact_me .p{
+    color: rgb(170, 170, 170);
+    padding-bottom: 30px;
+    position: relative;
+    top: 0px;
+
+}
+.forms >div{
+    display: flex;
+    gap: 10px;
+}
+.direct-comm{
+    background-color: #cdcdcd;
+    width: 40vw;
+    height: 450px;
+    border-radius: 15px;
+    
+}
+.he >div{
+    display: flex;
+    position: relative;
+    top: 44px;
+    left: 48px;
+
+
+
+}
+.forms{
+    height: 520px;
+}
+.get-in-touch img{
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 91%, rgba(252, 176, 69, 1) 100%);    padding: 11px;
+    border-radius: 15px;
+}
+.get-in-touch h4{
+    font-size: 21px;
+    position: relative;
+    left: 12px;
+    top: 12px;
+    color: black;
+}
+.indirect-comm{
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: auto;
+    border-radius: 15px;
+}
+.social-media >div >div {
+    display: flex;
+    position: relative;
+    top: 109px;
+    left: -144px;
+    margin: 24px 0px;
+}
+
+.social-media >div >div h4{
+    color: black;
+    position: relative;
+    left: 14px;
+    font-size: 15px;
+}
+.social-media p{
+    color: black;
+    margin: -27px;
+    position: relative;
+    top: 80px;
+    left: -64px;
+    
+ 
+}
+.social-media p a{
+    text-decoration: none;
+}
+
+.em a{
+    position: relative;
+    left: 11px;
+    color: red;
+
+}
+.gi a{
+    position: relative;
+    left: -56px;
+    color: black;
+
+}
+.li a{
+    position: relative;
+    left: -1px;
+    color: #002afa;
+
+}
+.lo a{
+    position: relative;
+    left: -59px;
+    color: red;
+
+}
+
+
+.em a:hover{
+    text-decoration: underline;
+    text-transform: ;
+}
+.gi a:hover{
+    text-decoration: underline;
+}
+.li a:hover{
+    text-decoration: underline;
+
+}
+.lo a:hover{
+    text-decoration: underline;
+
+}
+.indirect-comm{
+    position: relative;
+    top: -452px;
+    left: 652px;
+    height: 450px;
+}
+    
+.indirect-comm {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;     /* vertically center */
+   
+}
+.feedback-form {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    
+}
+label{
+    color: black;
+    position: relative;
+    left: -105px;
+}
+
+input{
+    padding: 10px;
+    width: 284px;
+    border-radius: 15px;
+}
+
+.sub{
+    background: #4D4DFF;
+    background: linear-gradient(90deg, rgba(77, 77, 255, 1) 11%, rgba(101, 223, 247, 1) 100%);
+    color: white;
+    width: 396px;
+}
+.sub img{
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    left: -8px;
+}
+.sub:hover{
+    background: #6f00ff;
+    background: linear-gradient(90deg, rgba(111, 0, 255, 1) 0%, rgba(149, 87, 199, 1) 62%, rgba(175, 83, 237, 1) 100%);
+    transition: 0.1 ease;
+}
+
+.foot-first{
+    text-align: center;
+    background: #000000;
+    background: linear-gradient(41deg, rgba(0, 0, 0, 1) 0%, rgba(0, 4, 38, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    height: 330px;   
+}
+
+.imagee img{
+   background-color: blue;
+   padding: 15px;
+   border-radius: 31px;
+}
+.imagee h4{
+    font-size: 35px;
+    
+    
+}
+.imagee p{
+    color: rgb(125, 124, 124);
+}
+.img-name{
+    position: relative;
+    top: 30px;
+}
+.img-name .nav-bar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: center;
+    text-decoration: none;
+
+
+}
+.img-name .nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(125, 124, 124);
+
+}
+.img-name .nav-bar ul li a:hover{
+    color: rgb(51, 51, 231);
+    text-decoration: underline;
+}
+.my-detail{
+    display: flex;
+    justify-content: space-between;
+}
+.my-detail p{
+    position: relative;
+    top: -33px;
+    color: rgb(125, 124, 124);
+}
+.dd{
+    text-align: right;
+}
+.grad{
+    color: #E499FF;
+   
+}
+.imagee a img:hover{
+    transform: translateY(-5px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="left">Abhay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#first">Home</a> </li>
+                    <li> <a href="#line1">Education</a> </li>
+                    <li> <a href="#line2">Skills</a> </li>
+                    <li> <a href="#line3">Projects</a> </li>
+                    <li> <a href="#line4">About me</a></li>
+                    <li> <a href="#line5">Contact me</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+       
+    </header>
+    <main>
+        <section id="first">
+            <section id="xyz">
+                <div id="b1">
+                    Hi my name is <span class="purple">Abhay</span> 
+                    <div>and i am a passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div id="b2">
+                    <img src="resources/y.png" alt="bg image">
+                </div>
+            </section>
+
+            <section class="resume-button">
+                <div class="bttn">
+                    <a href="resources/Abhay_Jaiswal_Resume.jpg"><button class="butn">View Resume</button></a>
+                    <a href="https://github.com/Abhay23043"><button class="butnn">Visit github</button></a>
+                    
+                </div>
+            </section>
+     </section>
+        <hr id="line1">
+        <section id="second">
+            <h1>Education</h1>
+            <span id="text_gray"> My academic focus is on balancing core computer science fundamentals with practical development skills while also preparing for competitive exams like GATE.</span>
+        </section>
+        <section class="education">
+            <div class="box">
+                <div class="first_line">
+                    <div class="cap"><img src="resources/cap.png" alt="cap" width="50px"></div>
+                    <div class="b.tech"><h2>Bachelor of Technology (b.tech)</h2>
+                        <div class="specilization">Computer Science and Technology</div>
+                    </div>
+                    <div class="dates">
+                        <div class="calender">
+                            <img src="resources/calender.png" alt="calender" width="20px">
+                        </div>
+                        <div class="year">
+                            2023-2027(Expected)
+                        </div>
+                    </div>
+                    <div class="loc">
+                        <div class="location"> 
+                            <img src="resources/location.png" alt="location" width="24px">
+                        </div>
+                        <div class="place">
+                            Lucknow
+                        </div>
+                    </div>
+                </div>
+                <div class="secondline">
+                    <p>Currently pursuing my B.Tech in Computer Science and Technology at B N College of Engineering & Technology, Lucknow. </p>
+
+                </div>
+                <div class="course">
+                    <div class="key_logo">
+                        <img src="resources/course.png" alt="course png" width="35px">
+                        <div class="key_text">
+                            <h3>Key Coursework</h3>
+                        </div>
+                    </div>
+                    <div class="course_list">
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Database Management Systems</li>
+                            <li>Operating Systems</li>
+                            <li>Computer Networks</li>
+                            <li>Web Development</li>
+                            <li>Object-Oriented     Programming</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </section>
+        <section class="edu_skills">
+            <div class="skill_education">
+                <h3>Skills Developed Through Education</h3>
+            </div>
+            <div class="boxes">
+                <div class="box1">
+                    <h5>Technical Skills</h5>
+                    <h6>(hover me)</h6>
+                    <p class="tech_skill">C,HTML,CSS,JavaScript,problem-solving with DSA</p>
+                </div>
+                <div class="box2">
+                    <h5>soft skills</h5>
+                    <h6>(hover me)</h6>
+                    <p class="soft_skills">Leadership, team collaboration,adaptability, public speaking.</p>
+                </div>
+                <div class="box3">
+                    <h5>Communication skills</h5>
+                    <h6>(hover me)</h6>
+                    <p class="comm_skill">Active Listening,Clarity and Conciseness,Empathy,Confidence.</p>
+                </div>
+            </div>
+            <div class="university-highlights">
+                <h3>University Highlights</h3>
+                <div class="three-block">
+                    <div class="one">
+                        <p id="text-purple">Leadership Role</p>
+                        <div>Class Coordinator</div>
+                        
+                    </div>
+                    <div class="two">
+                        <p id="text-blue">Community Impact</p>
+                        <div>Technical Team Member</div>
+                        
+                    </div>
+                    <div class="three">
+                        <p id="text-green">Personal Growth</p>
+                        <div>public speaking and presentations.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <hr id="line2">
+        <section class="third">
+          <div class="skills-section">
+            <h2>Skills & Expertise</h2>
+            <p>Skilled in web development with expertise in HTML, CSS, JavaScript, and MySQL, I create responsive and user-friendly applications. Passionate about problem-solving, design, and continuous learning to deliver impactful digital solutions.</p>
+          </div>
+          <div class="buttons">
+                <div id="Tools"> <button>Tools & Platforms</button></div>
+                <div id="dev"><button>Development Skills</button></div>
+                <div id="clo"><button>Cloud & Deployment</button></div>
+                <div id="soft"><button >Soft Skills</button></div>
+                <div id="des"><button>Design</button></div>
+            </div>
+            <div class="grid-container">
+                <div class="Tool"><h4>Tools & platforms</h4>
+                    <ul>
+                        <li>Git & Github</li>
+                        <li>VS code</li>
+                        <li>cursor ai</li>
+                    </ul>
+                </div>
+                <div class="development_skill"><h4>Development Skills</h4>
+                    <div>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>C/C++</li>
+                            <li>python</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="cloud-deployment"><h4>Cloud & Deployment</h4>
+                    <div>
+                        <ul>
+                            <li>Github Pages</li>
+                            <li>Netlify</li>
+                            <li>Google Cloud-(basics)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="soft-skill"><h4>Soft Skills</h4>
+                    <div>
+                        <ul>
+                            <li>Communication-Skills</li>
+                            <li>Problem Solving</li>
+                            <li>Time Management</li>
+                            <li>Critical Thinking</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="design"><h4>Design</h4>
+                    <div>
+                        <ul>
+                            <li>Canva</li>
+                            <li>Photoshop (basics)</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+        </section>
+        <hr id="line3">
+        <section class="projects">
+             <div class="featured_project">
+                <h2>Featured Projects</h2>
+                <div>
+                    <p>
+                    Here are some of my featured projects that showcase my skills in web development and design. Each project highlights my ability to create responsive, user-friendly, and visually appealing websites. Click on the images to explore the projects in detail.
+                    </p>
+                </div>
+                
+                <div class="first-project">
+                    <div class="images">
+                        <div>
+                            <a href="https://abhay23043.github.io/first_website/" title="my website" target="_blank"><img src="resources/screenshot1.png" alt="Home page" class="s1"></a>
+                            <h3>SEO website </h3>
+                            <p>
+                                <ul>
+                                    <li>
+                                        A responsive website built using HTML, CSS, and JavaScript, designed to adapt seamlessly across devices.
+                                    </li>
+                                    <li>
+                                         The site is SEO-friendly, with a clean structure: Home, About, Contact, Services, Feedback.
+                                    </li>
+                                    <li>
+                                        The content is user-friendly and clear — visitors quickly know what services are offered (web dev, ML, algorithms, etc.)
+                                    </li>
+                                    <li>
+                                        It includes easy-to-find contact links plus social media (LinkedIn, Instagram).
+                                    </li>
+                                    <li>
+                                        Here is the link to my website: <a href="https://abhay23043.github.io/first_website/" target="_blank" style="color: yellow;">Website Link</a>
+                                    </li>
+                                </ul>
+                               
+                            </p>
+                        </div>
+                        <div>
+                            
+                        </div>
+                     </div> 
+                    <div class="second-project">
+                           <!-- <a href="resources/coming soon.jpg" target="_blank" title="Available soon " ><img src="resources/coming soon.jpg" alt="2nd page" class="s2"></a> -->
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <hr id="line4">
+        <section class="About-me">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <P>I'm a passionate B.Tech Computer Science Engineering student, interested in web development, problem-solving, and modern technologies.</P>
+               
+               
+            </div>
+            <div class="btns">
+                            <!-- Buttons -->
+            <button onclick="showContent('content1', this)" class="active"><img src="resources/journey1.png" alt="jr" width="20px">Journey</button>
+            <button onclick="showContent('content2', this)"><img src="resources/value.png" alt="vl" width="20px">Values</button>
+            <button onclick="showContent('content3', this)"><img src="resources/fact.png" alt="fa" width="20px">Fact</button>
+            <button onclick="showContent('content4', this)"><img src="resources/bulb.png" alt="ph" width="20px">Philoshpy</button>
+            <div class="my-photo">
+                <!--my image -->
+                <img src="resources/my img2.jpg" alt="my image">
+            </div>
+           
+            
+
+            <!-- Content --> 
+            <div id="content1" class="content active">
+                <div class="journey">
+                    <div class="headerr">
+                        <div class="c1">
+                            <img src="resources/aeroplane.png" alt="jr" width="30px">
+                        <h4>My Journey</h4>
+                        </div>
+                        <p>
+                            My journey in design began with a curiosity about how technology can be made more human-centered. Through my academic pursuits in CSE and practical experience in UI/UX design, I've developed a unique perspective that combines technical expertise with creative problem-solving.
+                        </p>
+                       <br>
+                        <p>
+                            I have a curious mind that constantly explores new design trends, tools, and human computer interaction patterns, and I'm an absolute learner who thrives on turning feedback into refined, impactful designs.
+                        </p>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div id="content2" class="content">
+                <div class="values">
+                    <div class="val_head">
+                        <div class="vall">
+                            <img src="resources/value.png" alt="vl" width="30px">
+                            <h4>What Drives Me</h4>
+                        </div>
+                        <div class="para">
+                            <div class="a">
+                                <div class="b">
+                                    <div class="g">
+                                        <img src="resources/school.png" alt="colour logo">
+                                        <h5>Creative Problem Solving</h5>
+                                    </div>
+                                    <p>Finding innovative solutions through design thinking</p>
+                                </div>
+                                <div class="c">
+                                    <div class="h">
+                                        <img src="resources/user-account.png" alt="people">
+                                        <h5>User-Centered Design</h5>
+                                    </div>
+                                    <p>Putting user needs at the heart of every design</p>
+                                </div>
+                            </div>
+                            <div class="d">
+                                <div class="e">
+                                    <div class="i">
+                                        <img src="resources/html.png" alt="html logo">
+                                        <h5>Technical Integration</h5>
+                                    </div>
+                                    <p>Bridging design and development seamlessly</p>
+                                </div>
+                                <div class="f">
+                                    <div class="j">
+                                        <img src="resources/cloud.png" alt="cloud">
+                                        <h5>Future-Forward Thinking</h5>
+                                    </div>
+                                    <p>Embracing emerging technologies and trends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content3" class="content">
+                <div class="factt">
+                    <div class="heade">
+                        <img src="resources/fact.png" alt="fact" width="30px">
+                        <h4>Quick Facts</h4>
+                    </div>
+                    <div class="contt">
+                        <div class="q">
+                            <h6>Experience</h6>
+                            <p>NIL</p>
+                        </div>
+                        <hr style="opacity: 0.08;margin: -14px 36px;">
+                        <div class="w">
+                            <h6>Education</h6>
+                            <p>B.tech CSE</p>
+                        </div>
+                        <hr style="opacity: 0.08;margin: -14px 36px;">
+                        <div class="r">
+                            <h6>Specialization</h6>
+                            <p>No</p>
+                        </div>
+                        <hr style="opacity: 0.08;margin: -14px 36px;">
+                        <div class="t">
+                            <h6>Project Completed</h6>
+                            <p>2</p>
+                        </div>
+                        <hr style="opacity: 0.08;margin: -14px 36px;">
+                        <div>
+                            <h6>Internship</h6>
+                            <p>NIL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content4" class="content">
+                <div class="philos">
+                    <div class="hea">
+                        <img src="resources/bulb.png" alt="bulb" width="30px">
+                        <h4>My philosphy</h4>
+                    </div>
+                    <div class="con">
+                        <p>"My philosophy is to work with dedication and persistence. Once I commit to a task, I make sure to complete it successfully, no matter what challenges come my way."</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr id="line5">
+        <section class="contact_me">
+            <div class="let-connect">
+                <h2>Lets Connect</h2>
+            </div>
+            <div class="p">
+                I'm always open to new opportunities, and interesting conversations. <br>
+                Feel free to reach out!
+            </div>
+            <div class="forms">
+                <div class="direct-comm">
+                    <div class="he">
+                        <div class="get-in-touch">
+                            <img src="resources/comment.png" alt="chat buble" width="30px">
+                            <h4>Get in Touch</h4>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <div class="email">
+                            <div>
+                                <img src="resources/gmail.png" alt="gmail" width="50px">
+                                <h4>Email</h4>
+                            </div>
+                            <p class="em">
+                                <a href="mailto:abhayjaiswal457@gmail.com" title="Send email to Abhay">abhayjaiswal457@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="github">
+                            <div>
+                                <img src="resources/github.png" alt="gith" width="50px">
+                                <h4>Github</h4>
+                            </div>
+                            <p class="gi">
+                                <a href="https://github.com/Abhay23043" target="_blank" title="Redirect to Github" rel="noopener noreferrer">Abhay23043
+                                </a>
+                            </p>
+                        </div>
+                        <div class="linkedin">
+                            <div>
+                                <img src="resources/linkedin.png" alt="linkedin" width="50px">
+                                <h4>Linkedin</h4>
+                            </div>
+                            <p class="li">
+                                <a href="https://www.linkedin.com/in/abhay-jaiswal-a3747730a/" target="_blank" title="Redirect to LinkedIn" rel="noopener noreferrer">abhay-jaiswal-a3747730a
+                                </a>
+                            </p>
+                        </div>
+                        <div class="location">
+                            <div>
+                                <img src="resources/gps.png" alt="location" width="50px">
+                                <h4>Location</h4>
+                            </div>
+                            <p class="lo"><a href="https://en.wikipedia.org/wiki/Lucknow" title="My Location">Lucknow, UP</a></p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="indirect-comm">
+                    <section class="feedback-form">
+                        <form action="https://formspree.io/f/xrbadnnk" method="post">
+                            <!-- Name field -->
+                            <label for="name">Name</label> <br>
+                            <input type="text" id="name" name="name" placeholder="your full name">
+                            <br><br>
+
+                            <!-- Email field -->
+                            <label for="email">Email</label> <br>
+                            <input type="email" placeholder="your email id" id="email" name="email" required>
+                            <br><br>
+                             <!-- Textarea field -->
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" cols="40"    placeholder="Write your message here..."></textarea>
+                            <br><br>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="sub"><img src="resources/aeroplane.png" alt="aero" width="25px" style="filter: invert(1);">Send Message</button>
+
+                        </form>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="foot-first">
+            <div class="img-name">
+                <div class="imagee">
+                    <a href="#first"><img src="resources/top.png" alt="upward-arrow" width="30px" "></a>
+                    
+                    <h4 class="grad">Abhay Jaiswal</h4>
+                    <p>Web Developer & CSE student</p>
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="#first">Home</a></li>
+                        <li><a     href="#line1">Education</a> </li>
+                        <li><a href="#line2">Skills</  a> </li>
+                        <li><a href="#line3">Projects</a> </li>
+                        <li><a href="#line4">About me</a></li>
+                        <li> <a href="#line5">Contact me</a></li>
+                    </ul>
+                </div>
+                <hr style="margin: 40px 30px; opacity: 0.5;">
+                <div class="my-detail">
+                    <p>
+                       &copy; 2025 Abhay Jaiswal. Made with love and lots of creativity.
+                    </p>
+                    <p class="dd">
+                        Designed & Developed with passion <br>
+                        Last updated: SEP 2025
+                        
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Engineer', 'Web developer','Graphic Designer.'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script>
+    function showContent(id, btn) {
+      // Hide all content
+      document.querySelectorAll('.content').forEach(div => {
+        div.classList.remove('active');
+      });
+      // Remove active class from all buttons
+      document.querySelectorAll('button').forEach(b => {
+        b.classList.remove('active');
+      });
+      // Show selected content
+      document.getElementById(id).classList.add('active');
+      // Highlight clicked button
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
