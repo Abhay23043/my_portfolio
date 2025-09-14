@@ -24,7 +24,7 @@ This portfolio highlights my education, skills, projects, and personal philosoph
 ---
 
 ## 🔹 Live Demo  
-🔗 [Click Here to Visit My Portfolio](https://abhay23043.github.io/portfolio/)  
+🔗 [Click Here to Visit My Portfolio](https://abhay23043.github.io/my_portfolio/)  
 
 ---
 
