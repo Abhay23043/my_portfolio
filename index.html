@@ -91,10 +91,8 @@
             font-size: 20px;
         }
         .resume-button{
-        /* position: relative;
-        top: -276px;
-        left: 97px;      */
-        width: 1200px;
+        
+        width:100%;
         }
     
         .bttn{
@@ -789,7 +787,7 @@
 }
 .direct-comm{
     background-color: #cdcdcd;
-    width: 40vw;
+    width: 80vw;
     height: 450px;
     border-radius: 15px;
     
@@ -818,12 +816,12 @@
     top: 12px;
     color: black;
 }
-.indirect-comm{
+/* .indirect-comm{
     background-color: rgb(255, 255, 255);
     width: 40vw;
     height: auto;
     border-radius: 15px;
-}
+} */
 .social-media >div >div {
     display: flex;
     position: relative;
@@ -892,7 +890,7 @@
     text-decoration: underline;
 
 }
-.indirect-comm{
+/* .indirect-comm{
     position: relative;
     top: -452px;
     left: 652px;
@@ -901,8 +899,8 @@
     
 .indirect-comm {
     display: flex;
-    justify-content: center; /* horizontally center */
-    align-items: center;     /* vertically center */
+    justify-content: center; 
+    align-items: center;    
    
 }
 .feedback-form {
@@ -910,7 +908,7 @@
     max-width: 400px;
     border-radius: 12px;
     
-}
+} */
 label{
     color: black;
     position: relative;
@@ -1002,6 +1000,113 @@ input{
 .imagee a img:hover{
     transform: translateY(-5px);
 }
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    background: #6d4fc1;
+    backdrop-filter: blur(100px);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 60vw;
+    line-height: 2.5;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+  nav ul.active {
+    display: flex; /* show menu jab active ho */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger icon */
+  }
+  body{
+    font-size: 8px;
+  }
+  #b2{
+    display: none;
+  }
+  .boxes{
+    position: relative;
+    left: 100px;
+    width: 300px;
+    flex-direction: column;
+  }
+  .university-highlights{
+    height: 400px;
+  }
+  .three-block{
+    flex-direction: column;
+    
+  }
+  .three-block>div{
+    position: relative;
+    left: 10vw;
+    margin:20px 0px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  .buttons{
+    display: none;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .featured_project>div p{
+    margin: 0px 10px;
+  }
+  .about-me p{
+    margin:10px 10px;
+  }
+  .headerr p{
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: -25px;
+    font-size: 8px;
+  }
+  .values{
+    size: -10px;
+  }
+  .values{
+    display: none;
+  }
+  .con p{
+    margin: 18px 10px;
+    font-size: 15px;
+  }
+  .feedback-form{
+    display: none;
+  }
+  .indirect-comm{
+    display: none;
+  }
+  .he{
+    width: 80vw;
+  }
+  .social-media{
+    display: none;
+  }
+  
+}
+
+
+
 
     </style>
 </head>
@@ -1020,6 +1125,7 @@ input{
                     
                 </ul>
             </div>
+            <div class="hamburger">☰</div>
         </nav>
        
     </header>
@@ -1148,7 +1254,7 @@ input{
         <hr id="line2">
         <section class="third">
           <div class="skills-section">
-            <h2>Skills & Expertise</h2>
+            <h3>Skills & Expertise</h3>
             <p>Skilled in web development with expertise in HTML, CSS, JavaScript, and MySQL, I create responsive and user-friendly applications. Passionate about problem-solving, design, and continuous learning to deliver impactful digital solutions.</p>
           </div>
           <div class="buttons">
@@ -1448,30 +1554,30 @@ input{
                     </div>
 
                 </div>
-                <div class="indirect-comm">
+                <!-- <div class="indirect-comm">
                     <section class="feedback-form">
                         <form action="https://formspree.io/f/xrbadnnk" method="post">
-                            <!-- Name field -->
+                    
                             <label for="name">Name</label> <br>
                             <input type="text" id="name" name="name" placeholder="your full name">
                             <br><br>
 
-                            <!-- Email field -->
+                           
                             <label for="email">Email</label> <br>
                             <input type="email" placeholder="your email id" id="email" name="email" required>
                             <br><br>
-                             <!-- Textarea field -->
+                            
                             <label for="message">Message:</label><br>
                             <textarea id="message" name="message" rows="4" cols="40"    placeholder="Write your message here..."></textarea>
                             <br><br>
 
-                            <!-- Submit button -->
+                           
                             <button type="submit" class="sub"><img src="resources/aeroplane.png" alt="aero" width="25px" style="filter: invert(1);">Send Message</button>
 
                         </form>
                     </section>
                     
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -1487,7 +1593,7 @@ input{
                 <div class="nav-bar">
                     <ul>
                         <li><a href="#first">Home</a></li>
-                        <li><a     href="#line1">Education</a> </li>
+                        <li><a href="#line1">Education</a> </li>
                         <li><a href="#line2">Skills</  a> </li>
                         <li><a href="#line3">Projects</a> </li>
                         <li><a href="#line4">About me</a></li>
@@ -1532,5 +1638,14 @@ input{
       btn.classList.add('active');
     }
   </script>
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector("nav ul");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
