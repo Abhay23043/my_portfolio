@@ -107,6 +107,12 @@
             padding: 20px 0; 
             text-align: center;
         }
+        main {
+        min-height: 100vh;   /* takes full viewport height */
+        padding-bottom: 50px; /* gives space above footer */
+        box-sizing: border-box;
+}
+
         main hr{
        
             margin: 35PX 56px;
@@ -773,6 +779,13 @@
 .let-connect h2{
     margin: 17px;
     font-size: 35px;
+    
+}
+.feedback-form{
+    background-color: #fff;
+}
+.indirect-comm{
+    height: 100px;
 }
 .contact_me .p{
     color: rgb(170, 170, 170);
@@ -801,9 +814,7 @@
 
 
 }
-.forms{
-    height: 520px;
-}
+
 .get-in-touch img{
     background: #833AB4;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 91%, rgba(252, 176, 69, 1) 100%);    padding: 11px;
@@ -816,12 +827,7 @@
     top: 12px;
     color: black;
 }
-/* .indirect-comm{
-    background-color: rgb(255, 255, 255);
-    width: 40vw;
-    height: auto;
-    border-radius: 15px;
-} */
+
 .social-media >div >div {
     display: flex;
     position: relative;
@@ -890,17 +896,21 @@
     text-decoration: underline;
 
 }
-/* .indirect-comm{
-    position: relative;
-    top: -452px;
-    left: 652px;
-    height: 450px;
-}
+.indirect-comm{
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+    height: auto;
+    border-radius: 15px;
+    margin: 25px 0px;
+    
+} 
+
     
 .indirect-comm {
     display: flex;
     justify-content: center; 
-    align-items: center;    
+    text-align: center;
+   
    
 }
 .feedback-form {
@@ -908,13 +918,23 @@
     max-width: 400px;
     border-radius: 12px;
     
-} */
-label{
-    color: black;
-    position: relative;
-    left: -105px;
+}
+.feedback-form input,textarea{
+    width: 90%;
 }
 
+.feedback-form input:active{
+    .feedback-form label{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+
+label{
+    color: black;
+   
+}
 input{
     padding: 10px;
     width: 284px;
@@ -1011,15 +1031,17 @@ input{
   nav ul {
     display: none; /* hide menu by default */
     flex-direction: column;
-    background: #6d4fc1;
+    background: linear-gradient(135deg, #3a0ca3, #7209b7, #c10358);
+
     backdrop-filter: blur(100px);
     position: absolute;
     top: 50px;
     right: 0;
-    width: 60vw;
+    width: 100vw;
     line-height: 2.5;
     text-align: center;
     padding: 10px;
+    font-size: 35px;
     
 }
 #name-dai{
@@ -1040,10 +1062,12 @@ input{
     display: none;
   }
   .boxes{
-     position: relative;
-    left: 20px; 
-    width: fit-content;
     flex-direction: column;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical alignment */
+    margin: auto;              /* center inside parent */
+    width: 100%;               /* full width so center ho sake */
+    left: 0;                   /* remove shift */
   }
   .university-highlights{
     height: 400px;
@@ -1093,20 +1117,49 @@ input{
     margin: 18px 10px;
     font-size: 15px;
   }
-  .feedback-form{
+   .feedback-form{
+        padding: 20px;
+  } 
+  /* .indirect-comm{
     display: none;
-  }
-  .indirect-comm{
-    display: none;
-  }
+  } */
+   .feedback-form input{
+    width: 60vw;
+    
+}
+.feedback-form textarea{
+    width: 60vw;
+    
+}
   .he{
     width: 80vw;
   }
   .social-media{
-    display: none;
+    position: relative;
+    left: -124px;
+    margin-top: -28px;
+  }
+  .em a{
+    position: relative;
+    left: -12px;
+  }
+  .linkedin a{
+    position: relative;
+    left: -20px;
+  }
+    .github a{
+    position: relative;
+    left: -47px;
+  }
+    .location a{
+    position: relative;
+    left: -47px;
+  }
+  .social-media>div{
+    margin: 45px auto;
   }
   #b1{
-        position: relative;
+    position: relative;
     left: -130px;
     font-size: 40px;
   }
@@ -1140,7 +1193,10 @@ input{
   .header{
     min-width: 348px;
   }
-  
+  .sub{
+    width: auto;
+  }
+
 
 }
 
@@ -1591,7 +1647,7 @@ input{
                     </div>
 
                 </div>
-                <!-- <div class="indirect-comm">
+                <div class="indirect-comm">
                     <section class="feedback-form">
                         <form action="https://formspree.io/f/xrbadnnk" method="post">
                     
@@ -1608,13 +1664,12 @@ input{
                             <textarea id="message" name="message" rows="4" cols="40"    placeholder="Write your message here..."></textarea>
                             <br><br>
 
-                           
                             <button type="submit" class="sub"><img src="resources/aeroplane.png" alt="aero" width="25px" style="filter: invert(1);">Send Message</button>
 
                         </form>
                     </section>
                     
-                </div> -->
+                </div>
             </div>
         </section>
     </main>
@@ -1683,6 +1738,18 @@ input{
     navLinks.classList.toggle("active");
   });
 </script>
+<script>
+  // Select all nav links inside the menu
+  const navItems = document.querySelectorAll("nav ul li a");
+
+  navItems.forEach(item => {
+    item.addEventListener("click", () => {
+      // Close the slider menu after clicking
+      navLinks.classList.remove("active");
+    });
+  });
+</script>
+
 
 </body>
 </html>
